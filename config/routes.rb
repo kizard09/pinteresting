@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get '/new_temp' => 'pins#new_temp'
 
-  get "/users/id/edit" => 'static_pages#edit_user'
+  get "/static_pages/:id/edit_user" => 'static_pages#edit_user'
 
   delete '/pins' => 'pins#delete_all'
 
