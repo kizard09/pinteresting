@@ -53,7 +53,7 @@ body {
 	box-decoration-break: none;
 }
 
-.learnmore a{
+.learnmore a {
 	color: #000066;
 	font-weight: bold;
 
@@ -238,7 +238,7 @@ nav ul{
 	text-align: center;
 }
 
-.item-title a:link, .item-title a:active, .item-title a:visited{
+.item-title a:link, .item-title a:active, .item-title a:visited {
 	color:#000066;
 	text-align: center;
 }
@@ -376,8 +376,9 @@ td {
 	font-family: Georgia;
 	font-size: 10px;
 }
+
 p {
-	text-align: center
+	text-align: center;
 }
 p :active, p :hover, p :visited, p :link {
 	padding:5px;
