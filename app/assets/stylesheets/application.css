@@ -1,0 +1,413 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *= require bootstrap_and_customization
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+	background-image: url("jefferson-sunrise-wide_livingston.jpg");
+	background-size: 1400px;
+	color: #000066;
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.container-fluid a:hover {
+	color: gray;
+	opacity: 1;
+}
+.container-fluid {
+	background-color: white;
+}
+.jumbotron {
+	border-radius: 10px;
+	text-align: center;	
+	background-color: rgba(255, 255, 255, 0.5);
+	font-family: Georgia;
+}
+
+.jumbotron p {
+	font-family: Georgia;
+}
+
+.learnmore button {
+	opacity: 0.7;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.learnmore button:hover{
+	opacity: 1;
+	box-decoration-break: none;
+}
+
+.learnmore a{
+	color: #000066;
+	font-weight: bold;
+
+}
+
+.dropdown{
+	border-radius: 10px;
+}
+
+.learnmore a:hover {
+	color: #000066;
+	font-weight: bold;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.sign_up {
+	background: none;
+}
+
+.sign_up :hover{
+	font-weight: bold;
+}
+
+.navbar-brand a:hover{
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 24px;
+	text-shadow: 2px 5px lightgray;
+	border-radius: 30px;
+}
+
+.navbar {
+	background-color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: gray;
+
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: gray;
+	border-radius: 30px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar :hover{
+	background-color: white;
+}
+
+button {
+	color: rgba(255, 255, 255, 0.7);
+}
+nav ul{
+	text-decoration: none;
+	background-color: transparent;
+	font-family: Georgia;
+}
+.container-fluid {
+	text-decoration: none;
+	background-color: transparent;
+	font-family: Georgia;
+}
+
+#bs-example-navbar-collapse-1 a:hover{
+	font-weight: bold;
+	color:gray;
+	background-color: lightgray;
+}
+
+
+/*index.html.erb files */
+#navbar2 a:link, #navbar2 a:visited, #navbar2 a:active {
+	text-decoration: none;
+	font-size:18px;
+	background-color: transparent;
+	color: #000066;
+}
+
+#navbar2 a:hover {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#navbar2 {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+.resize {
+	width: 10px;
+	height: 10px;
+}
+
+
+.resize:hover {
+	width: 20px;
+	height: 20px;
+}
+
+/*_form.html.erb files */
+#field {
+	font-family: Georgia;
+	font-size: 15px;
+	text-align: center;
+	padding: 15px;
+}
+#field select{
+	font-family: Georgia;
+	font-size: 15px;
+}
+
+
+#field input {
+	font-family: Georgia;
+	font-size: 15px;
+	text-align: center;
+	width:250px;
+}
+
+.actions {
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+
+/* show.html.erb files */
+#pinshow {
+	font-family: Georgia;
+	text-align: center;
+	font-size: 20px;
+	padding: 0px;
+	color: #000066;
+}
+
+/* index.html.erb files */
+.item-background {
+	background-color: white;
+	box-shadow: 0 5px 5px #888888;
+	margin: 0 2px 15px;
+	transition: opacity: .4s ease-in-out;
+	column-break-inside: avoid;
+	display: inline-block;
+	width: 100%;
+	border-radius: 5px;
+	padding-top: 15px;
+}
+
+.item-background :link {
+	text-decoration: none;
+	color: #000066;	
+}
+
+.item-background:not(:hover) {
+	opacity: 0.7; /* makes it a little clearer when hover over it*/
+}
+
+.item-background :hover {
+	background-color: transparent;
+	text-decoration: none;
+	color:#000066;
+}
+
+.pin-image {
+	width: 100%;
+	height: auto;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+#pin_image {
+	text-align: center;
+}
+
+,{
+	padding: 15px;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	color:#000066;
+	text-align: center;
+}
+
+.item-title a:link, .item-title a:active, .item-title a:visited{
+	color:#000066;
+	text-align: center;
+}
+/*
+.boardpins a:hover, .boardpins a:link, .boardpins a:active, .boardpins a:visited{
+	text-align: center;
+	box-shadow: 10px;
+	background-color: transparent;
+}*/
+
+.item-title a:hover {
+	color:#000066;
+	font-size: 20px;
+	text-align: center;
+}
+
+#columns {
+	font-family: Georgia;
+	text-align: center;
+	column-width: 200px;
+	column-gap: 15px;
+	column-count: 8;
+	column-fill: auto;
+	-webkit-column-gap: 15px;
+	-webkit-column-count: 8;
+	-webkit-column-fill: auto;
+	-webkit-column-width: 200px;
+	width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+	-moz-column-gap: 15px;
+	-moz-column-count: 8;
+	-moz-column-fill: auto;
+	-moz-column-width: 200px;
+}
+
+.boards-background {
+	box-shadow: 0 5px 5px 1px #888888;
+	font-family: Georgia;
+	color: #000066;
+}
+
+#pinners-columns {
+	font-family: Georgia;
+	text-align: center;
+	column-width: 30px;
+	column-gap: 15px;
+	column-count: 6;
+	column-fill: auto;
+	-webkit-column-gap: 15px;
+	-webkit-column-count: 6;
+	-webkit-column-fill: auto;
+	-webkit-column-width: 320px;
+	width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+	-moz-column-gap: 15px;
+	-moz-column-count: 6;
+	-moz-column-fill: auto;
+	-moz-column-width: 30px;
+}
+
+.item-links a:link,  .item-links a:active, .item-links a:visited {
+	text-decoration: none;
+	background-color: transparent;
+	color:#000066;
+}
+
+.item-links a:hover {
+	font-weight: bold;
+}
+
+#userboards {
+	text-align: center;
+	color: #000066;
+}
+
+#userpins {
+	text-align: center;
+	background-color: transparent;
+	display: inline-block;
+}
+
+#userpins :link, #userpins :active, #userpins :visited {
+	background-color: transparent;
+	text-decoration: none;
+	color: #000066;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+#userpins :hover{
+	font-weight: bold;
+}
+
+.item-info {
+
+}
+/*general tags*/
+h1 {
+	text-align: center;
+	padding: 10px;
+	font-family:Georgia;
+	font-size: 50px;
+}
+
+table, th, td {
+	border-collapse: collapse;
+	font-family: Georgia;
+	box-shadow: 0 5px 5px 1px #888888;
+	padding: 0px;
+}
+
+td {
+	background-color: white;
+	padding-top: 10px;
+	opacity: 0.7;
+}
+
+td:hover{
+	background-color: white;
+	padding-top: 10px;
+	opacity: 1;
+}
+
+table {
+	width: 75%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+th {
+	height: 40px;
+	font-size: 20px;
+}
+
+td {
+	text-align: center;
+	font-family: Georgia;
+	font-size: 10px;
+}
+p {
+	text-align: center
+}
+p :active, p :hover, p :visited, p :link {
+	padding:5px;
+	font-family: Georgia;
+	font-size: 20px;
+	color:#000066;
+	text-decoration: none;
+}
+
+h4 :link, h4 :active, h4 :visited {
+	color: #000066;
+}
+
+h4 :hover{
+	font-weight: bold;
+}
+
+h3 {
+	font: Georgia;	
+}
+
+h3 :link, h3 :active, h3 :visited {
+	color: #000066;
+}
+
+h3 a:hover {
+	font-weight: bold;
+	font: Georgia;
+
+}

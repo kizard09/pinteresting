@@ -1,0 +1,7 @@
+	<div class = "boardpins">
+	<% @board.pins.each do |image| %>
+		<%= link_to image_tag(image.image_url, :width => "30%"), image %> 
+		<br>
+		<%= link_to image.name, image %>
+		<br>
+	<% end %>

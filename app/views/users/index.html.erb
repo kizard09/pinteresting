@@ -1,0 +1,23 @@
+<h1>Pinners</h1>
+
+<div id="pinners-columns">
+  <% @users.each do |user| %>
+    <div class = "item-background">
+      <div class = "item-info">
+        <h3><%= link_to user.full_name, user %></h3>
+      </div>
+      <div class = "item-links">
+        <%= link_to 'Edit', edit_user_path(user) %>
+        <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<br>
+<div id = "navbar2">
+  <table>
+    <td><%= link_to 'Delete All Users', User, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    <td><%= link_to 'New User', new_user_path %></td>
+  </table>
+</div>

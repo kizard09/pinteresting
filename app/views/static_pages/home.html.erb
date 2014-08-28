@@ -1,0 +1,22 @@
+
+	<h1>Pinteresting</h1>
+<p> This is an more interesting version of Pinterest</p>
+<div class = "learnmore">
+	<button><%= link_to "Learn More", about_path %></button>
+</p>
+
+<body>
+<p class ="sign_up">
+	<% if user_signed_in? %>
+		Logged in as <em><%= current_user.email %></em>
+		<br>
+		<br>
+			<%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+			<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
+			<br>
+		<% else %>
+			<%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link' %> |
+			<%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
+		<% end %>
+</body>
+

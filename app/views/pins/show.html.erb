@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<div id = "pinshow">
+<table>
+	<tbody>
+		<th><%= @pin.name %></th>
+		<tr></tr>
+		<td><%= image_tag(@pin.image_url, :width => "100%") if @pin.image.present? %>
+		</div>
+	</tbody>
+</table>
+</div>
+<p>
+	<br>
+	From <em><%= link_to pin.board.name, pin rescue "N/A" %></em> 
+
+	<br>
+	by <em><%= link_to pin.user.first_name, pin rescue "N/A" %></em>
+</p>
+
+<p>
+
+<%= link_to 'Edit', edit_pin_path(@pin) %> |
+<%= link_to 'Back', pins_path %>
+
+</p>

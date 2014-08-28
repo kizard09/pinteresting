@@ -1,0 +1,58 @@
+<h1>Pins</h1>
+
+<div id="columns">
+  <% @pins.each do |pin| %>
+    <div class = "item-background">
+      <div class="pin-image">
+        <%= link_to image_tag(pin.image_url, :width => "100%"), pin %>
+      </div>
+      <div class = "item-info">
+        <div class = "item-title"><h3><%= link_to pin.name, pin %></h3>
+        </div>
+        <h4>Board: <br><%= link_to pin.board.name, pin rescue "N/A" %></h4>
+        <h4><em>By <br><%= link_to pin.user.full_name, pin rescue "N/A" %></em></h4>
+      </div>
+      <div id = "item-links">
+        <a href = "/pins"><img alt = "star" src = "http://csauth.ccny.cuny.edu/facultystaff/hr/images/star_1.jpg" class = "resize"></a>
+        <%= link_to 'Edit', edit_pin_path(pin) %>
+        <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<br> 
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Board</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pins.each do |pin| %>
+      <tr>
+        <td><%= pin.name %></td>
+        <td><%= image_tag(pin.image_url, :width => 200) if pin.image.present?%></td>
+        <td><%= pin.board.name rescue "None" %></td>
+        <td><%= pin.user.first_name rescue "N/A" %></td>
+        <td><%= link_to 'Show', pin %></td>
+        <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
+        <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br> -->
+<div id = "navbar2">
+  <table>
+    <td><%= link_to 'Delete All Pins', Pin, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    <td><%= link_to 'New Pin', new_pin_path %></td>
+  </table>
+</div>
+
+<br>

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= @board.name %></strong>
+</p>
+
+<p>
+  <em>About:</em><br>
+  <%= @board.about %>
+</p>
+
+<p>
+	<em>Pins:</em><br>
+	<%= render 'user_pins' %>
+	</div>
+</p>
+
+<p>
+  <em>By <br> <%= @board.user.full_name %></em>
+</p>
+
+<p>
+<img alt = "star" src = "http://csauth.ccny.cuny.edu/facultystaff/hr/images/star_1.jpg" class = "resize">
+
+<%= link_to 'Edit', edit_board_path(@board) %> |
+<%= link_to 'Back', boards_path %>
+</p>
