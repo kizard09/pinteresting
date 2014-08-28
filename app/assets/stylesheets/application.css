@@ -50,7 +50,7 @@ body {
 
 .learnmore button:hover{
 	opacity: 1;
-	box-decoration-break: none;
+/*	box-decoration-break: none;*/
 }
 
 .learnmore a {
@@ -74,11 +74,11 @@ body {
 	background: none;
 }
 
-.sign_up :hover{
+.sign_up :hover {
 	font-weight: bold;
 }
 
-.navbar-brand a:hover{
+.navbar-brand a:hover {
 	text-decoration: none;
 	background-color: transparent;
 	font-size: 24px;
@@ -107,7 +107,7 @@ body {
 button {
 	color: rgba(255, 255, 255, 0.7);
 }
-nav ul{
+nav ul {
 	text-decoration: none;
 	background-color: transparent;
 	font-family: Georgia;
@@ -118,9 +118,9 @@ nav ul{
 	font-family: Georgia;
 }
 
-#bs-example-navbar-collapse-1 a:hover{
+#bs-example-navbar-collapse-1 a:hover {
 	font-weight: bold;
-	color:gray;
+	color: gray;
 	background-color: lightgray;
 }
 
@@ -128,7 +128,7 @@ nav ul{
 /*index.html.erb files */
 #navbar2 a:link, #navbar2 a:visited, #navbar2 a:active {
 	text-decoration: none;
-	font-size:18px;
+	font-size: 18px;
 	background-color: transparent;
 	color: #000066;
 }
@@ -173,7 +173,7 @@ nav ul{
 	font-family: Georgia;
 	font-size: 15px;
 	text-align: center;
-	width:250px;
+	width: 250px;
 }
 
 .actions {
@@ -216,7 +216,7 @@ nav ul{
 .item-background :hover {
 	background-color: transparent;
 	text-decoration: none;
-	color:#000066;
+	color: #000066;
 }
 
 .pin-image {
@@ -228,18 +228,15 @@ nav ul{
 
 #pin_image {
 	text-align: center;
-}
-
-{
 	padding: 15px;
 	padding-bottom: 10px;
 	padding-top: 0px;
-	color:#000066;
+	color: #000066;
 	text-align: center;
 }
 
 .item-title a:link, .item-title a:active, .item-title a:visited {
-	color:#000066;
+	color: #000066;
 	text-align: center;
 }
 /*
@@ -304,7 +301,7 @@ nav ul{
 .item-links a:link,  .item-links a:active, .item-links a:visited {
 	text-decoration: none;
 	background-color: transparent;
-	color:#000066;
+	color: #000066;
 }
 
 .item-links a:hover {
@@ -337,7 +334,7 @@ nav ul{
 h1 {
 	text-align: center;
 	padding: 10px;
-	font-family:Georgia;
+	font-family: Georgia;
 	font-size: 50px;
 }
 
@@ -362,7 +359,7 @@ td:hover{
 
 table {
 	width: 75%;
-	margin-left:auto;
+	margin-left: auto;
 	margin-right: auto;
 }
 
@@ -381,10 +378,10 @@ p {
 	text-align: center;
 }
 p :active, p :hover, p :visited, p :link {
-	padding:5px;
+	padding: 5px;
 	font-family: Georgia;
 	font-size: 20px;
-	color:#000066;
+	color: #000066;
 	text-decoration: none;
 }
 
@@ -392,7 +389,7 @@ h4 :link, h4 :active, h4 :visited {
 	color: #000066;
 }
 
-h4 :hover{
+h4 :hover {
 	font-weight: bold;
 }
 
