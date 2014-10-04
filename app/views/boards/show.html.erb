@@ -9,12 +9,16 @@
   <%= @board.about %>
 </p>
 
-<p>
-	<em>Pins:</em><br>
-	<%= render 'user_pins' %>
-	</div>
-</p>
+<p id="boardpins">
+	<em>Pins:</em>
 
+<% @board.user.pins.each do |x| %>
+	<br>
+	<%= link_to image_tag(x.image, :width => "20%"), x %> 
+	<br>
+	<%= link_to x.name, x %>
+<% end %>
+</p>
 <p>
   <em>By <br> <%= @board.user.full_name %></em>
 </p>

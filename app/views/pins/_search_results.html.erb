@@ -1,0 +1,6 @@
+<ul>
+    <% @pins.each do |pin| %>
+  <li><%= link_to pin.title, 
+    :action => 'show', :id => pin.id  %></li>
+  <% end %>
+</ul>

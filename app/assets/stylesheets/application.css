@@ -12,18 +12,19 @@
  *= require bootstrap_and_customization
  *= require_tree .
  *= require_self
+ *= bootstrap
+ 
  */
 
 
 body {
-	background-image: url("jefferson-sunrise-wide_livingston.jpg");
+	background-image: url("sunset.jpg");
 	background-size: 1400px;
 	color: #000066;
 	padding-top: 100px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
 .container-fluid a:hover {
 	color: gray;
 	opacity: 1;
@@ -38,10 +39,17 @@ body {
 	font-family: Georgia;
 }
 
-.jumbotron p {
+.jumbotron p, .jumbotron h1 {
 	font-family: Georgia;
+	color: #000066;
 }
 
+.jumbotron p a:hover{
+	text-decoration: none;
+	background-color: transparent;
+	color: #000066;
+	font-weight:bold;
+}
 .learnmore button {
 	opacity: 0.7;
 	padding: 20px;
@@ -55,7 +63,9 @@ body {
 
 .learnmore a {
 	color: #000066;
-	font-weight: bold;
+	font-size: 18px;
+	background-color: transparent;
+	text-decoration: none;
 
 }
 
@@ -64,10 +74,11 @@ body {
 }
 
 .learnmore a:hover {
-	color: #000066;
+	color: #000066;	
 	font-weight: bold;
 	background-color: transparent;
 	text-decoration: none;
+
 }
 
 .sign_up {
@@ -78,52 +89,64 @@ body {
 	font-weight: bold;
 }
 
+.navbar-brand a {
+	text-decoration: none;
+	background-color: transparent;
+	color:white;
+	font-family: Georgia;
+}
+
 .navbar-brand a:hover {
 	text-decoration: none;
 	background-color: transparent;
 	font-size: 24px;
-	text-shadow: 2px 5px lightgray;
 	border-radius: 30px;
+	color:white;
 }
 
-.navbar {
+button.navbar-toggle {
+	border-color: gray;
+	background-color: lightgray;
+}
+.icon-bar{
 	background-color: white;
 }
 
-.navbar-inverse .navbar-toggle {
-	border-color: gray;
-
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
+/*.navbar-inverse {
 	background-color: gray;
 	border-radius: 30px;
-}
+}*/
 
-.navbar-inverse .navbar-toggle .icon-bar :hover{
+/*.navbar-inverse .navbar-toggle .icon-bar :hover{
 	background-color: white;
-}
+}*/
 
-button {
+/*button {
 	color: rgba(255, 255, 255, 0.7);
-}
-nav ul {
+}*/
+.nav li a {
 	text-decoration: none;
 	background-color: transparent;
 	font-family: Georgia;
-}
-.container-fluid {
-	text-decoration: none;
-	background-color: transparent;
-	font-family: Georgia;
+	color: white;
+	font-size: 15px;
 }
 
-#bs-example-navbar-collapse-1 a:hover {
+.nav li a:hover {
+	color:gray;
+}
+/*.container-fluid {
+	text-decoration: none;
+	background-color: transparent;
+	font-family: Georgia;
+}*/
+
+/*#bs-example-navbar-collapse-1 a:hover {
 	font-weight: bold;
 	color: gray;
 	background-color: lightgray;
 }
-
+*/
 
 /*index.html.erb files */
 #navbar2 a:link, #navbar2 a:visited, #navbar2 a:active {
@@ -134,8 +157,7 @@ nav ul {
 }
 
 #navbar2 a:hover {
-	font-size: 30px;
-	font-weight: bold;
+	font-style: italic;
 }
 
 #navbar2 {
@@ -174,12 +196,9 @@ nav ul {
 	font-size: 15px;
 	text-align: center;
 	width: 250px;
+
 }
 
-.actions {
-	font-family: Georgia;
-	font-size: 20px;
-}
 
 
 /* show.html.erb files */
@@ -191,6 +210,10 @@ nav ul {
 	color: #000066;
 }
 
+#pin_image {
+	margin-left: auto;
+	margin-right: auto;
+}
 /* index.html.erb files */
 .item-background {
 	background-color: white;
@@ -298,13 +321,13 @@ nav ul {
 	-moz-column-width: 30px;
 }
 
-.item-links a:link,  .item-links a:active, .item-links a:visited {
+#item-links a:link,  #item-links a:active, #item-links a:visited {
 	text-decoration: none;
 	background-color: transparent;
 	color: #000066;
 }
 
-.item-links a:hover {
+#item-links a:hover {
 	font-weight: bold;
 }
 
@@ -385,24 +408,22 @@ p :active, p :hover, p :visited, p :link {
 	text-decoration: none;
 }
 
-h4 :link, h4 :active, h4 :visited {
+h4 a:link, h4 a:active, h4 a:visited {
 	color: #000066;
 }
 
-h4 :hover {
+h4 a:hover {
 	font-weight: bold;
 }
 
-h3 {
-	font: Georgia;	
-}
 
-h3 :link, h3 :active, h3 :visited {
+h3 :link, h3 :active, h3 :visited, h1, p, h3 {
 	color: #000066;
+	font-family: Georgia;
 }
 
 h3 a:hover {
 	font-weight: bold;
 	font: Georgia;
-
 }
+

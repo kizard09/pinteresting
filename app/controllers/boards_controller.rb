@@ -15,11 +15,13 @@ class BoardsController < ApplicationController
   
   def index
     @boards = current_user.boards
+
   end
 
   # GET /boards/1
   # GET /boards/1.json
   def show
+      @pins = @board.pins
   end
 
   # GET /boards/new

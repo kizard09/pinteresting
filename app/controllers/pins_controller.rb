@@ -70,7 +70,6 @@ class PinsController < ApplicationController
       end
     end
   end
-
   # DELETE /pins/1
   # DELETE /pins/1.json
   def destroy
@@ -80,7 +79,6 @@ class PinsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_pin
